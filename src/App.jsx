@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home'
 import Navbar from './Navbar';
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        {/* <Route path="/" exact component={Home} />
-        <Route path="/home" component={Home} />
+        {<Route path="/" element={<Home/>} />
+        /*<Route path="/home" component={Home} />
         <Route path="/about" component ={About}/>
         <Route path="/shop" component ={Shop}/>
         <Route path="/listen" component ={Listen}/>
