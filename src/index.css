@@ -1,36 +1,38 @@
 body {
-  background-image: url('src/assets/V.jpg');
-  background-size:2300px;
-  background-position:center;
+  background-image: url("src/assets/V.jpg");
+  background-size: 2300px;
+  background-position: center;
 }
 
 #topnavbar {
   display: flex;
   align-items: flex-start;
-  height: 110px;
+  height: 80px;
   width: 100%;
-  background-color: rgb(255, 255, 255);
-  border-radius:  10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  position: relative; 
+  z-index: 9999;
+  background-color: rgba(222, 59, 47, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  /* border-bottom: 2px solid rgba(255, 255, 255, 0.4); */
 }
 
 #linklist {
-  padding-left: 8%;
-  padding-top: 18px;
+  padding-left: 25px;
+  padding-top: 10px;
   width: 75%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 40px;
   list-style-type: none;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Metropolis;
   font-weight: bold;
-  
 }
 
 #linklist a {
-  text-decoration: none; 
-  color: #eb1821;
+  text-decoration: none;
+  color: white;
 }
 
 #linklist a:hover {
@@ -38,67 +40,81 @@ body {
   transition: transform 0.5s;
 }
 
-#logoNavbar {
-  width: 110px;
-  height: 105px;
-  padding-left: 35px;
-  border-radius: 50%;
-  transition: transform 0.5s; 
-}
-
-#logoNavbar:hover {
-  transform: scale(1.05);
-  cursor:pointer;
-}
-
-#homeTextGroup {
+#logoList {
   display: flex;
-  position: relative;
-  flex-direction: column;
-  text-align: center;
-  margin: 100px;
-  color: white;
-}
-
-#trueBloodsHome {
-  font-family: Metropolis;
-  font-weight: bold;
-  font-size: 70px;
-}
-
-#homeText {
-  font-family: Metropolis;
-}
-
-#jumperPic {
-  height: 300px;
-  width: 250px;
-  margin: 25px;
-  border-radius: 15%;
-  margin-right: -10px;
-}
-
-#proPic {
-  height: 300px;
-  width: 250px;
-  margin: 25px;
-  border-radius: 15%;
-  margin-left: -10px;
-}
-
-#imageContainer {
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  right: 0;
   width: 100%;
+  height: 100%;
+  gap: 20px;
 }
 
-#logoHome {
-  height: 185px;
-  width: 185px;
+.logoListLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.logoListLogo:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+#spotifyLogo {
+  height: 38px;
+  width: 38px;
+}
+
+#homeSectionRight {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeSectionLeft {
+  display: flex;
+  margin-bottom: 30px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: Metropolis;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+
+#truebloods {
+  font-size: 60px;
+}
+
+#logoContainer {
   background-color: white;
-  border-radius: 40%;
-  opacity: 90%;
-  margin: 40px;
+  height: 150px;
+  width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  margin-top: 30px;
 }
 
-
+#logo {
+  width: 155px;
+  height: 150px;
+  transition: transform 0.5s;
+}
