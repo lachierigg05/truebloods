@@ -11,9 +11,8 @@ body {
   width: 100%;
   position: relative; 
   z-index: 9999;
-  background-color: rgba(222, 59, 47, 0.8);
+  background-color: rgba(222, 59, 47, 0.9);
   border: 2px solid rgba(255, 255, 255, 0.4);
-  /* border-bottom: 2px solid rgba(255, 255, 255, 0.4); */
 }
 
 #linklist {
@@ -98,7 +97,7 @@ body {
   align-items: center;
   font-weight: bold;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 #truebloods {
@@ -107,14 +106,87 @@ body {
 
 #logoContainer {
   background-color: white;
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 140px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 #logo {
-  width: 155px;
-  height: 150px;
+  width: 145px;
+  height: 140px;
   transition: transform 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#homeContainer {
+  animation: fadeIn 2s ease-in-out;
+}
+
+#aboutImage {
+  height: 600px;
+  width: 500px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.3);
+}
+
+#aboutLeft {
+  width: 50%;
+  height: 88vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#aboutRight {
+  width: 50%;
+  height: 88vh;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#aboutHeader {
+  height: 100px;
+  width: 600px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.3);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Metropolis;
+  font-weight: bold;
+  font-size: 32px;
+  color: red;
+}
+
+#about {
+  height: 450px;
+  width: 600px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.3);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Metropolis;
+  font-size: 20px;
+  color: red;
+  text-align: center;
 }

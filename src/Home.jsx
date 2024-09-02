@@ -1,11 +1,6 @@
 function Home() {
   return (
     <div id="homeContainer">
-        {/* <div id="homeSectionRight">
-            <div id="logoContainer">
-                <img src='src/assets/Logo/TrueBloods_CMYK_Master.svg' id='logo' alt='Logo'></img>
-            </div>
-        </div> */}
         <div id="homeSectionLeft">
             <div id="homeTextContainer">
                 <h3>THIS IS</h3>
